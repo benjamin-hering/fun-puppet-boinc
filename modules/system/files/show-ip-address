@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ "$METHOD" = loopback ]; then
+    exit 0
+fi
+
+cp /etc/issue-standard /etc/issue
+facter ipaddress >> /etc/issue
+echo "" >> /etc/issue
