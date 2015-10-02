@@ -33,7 +33,8 @@ manifest = $confdir/manifests
 ssl_client_header = SSL_CLIENT_S_DN
 ssl_client_verify_header = SSL_CLIENT_VERIFY
 
-EOF > /etc/puppet.conf
+EOF 
+> /etc/puppet.conf
  
 puppet cert --generate $(hostname -f)
 puppet agent -t
