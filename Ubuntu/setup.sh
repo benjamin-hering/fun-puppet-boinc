@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 # starting setup
 ntpdate pool.ntp.org
 apt-get update
