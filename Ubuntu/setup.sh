@@ -4,6 +4,9 @@ ntpdate pool.ntp.org
 apt-get update
 apt-get install git ntp -y
 
+# Installing puppet master
+apt-get install puppetmaster-passenger -y
+
 # Clones this repo into puppet config director
 mkdir -p /etc/puppet/
 cd /etc/puppet/
